@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.pwn.reaktor.dziekanat.controller.UserController">
+   <children>
+      <Button fx:id="btnUpdateData" layoutX="224.0" layoutY="160.0" mnemonicParsing="false" onMouseClicked="#UpdateDataEvent" prefHeight="25.0" prefWidth="107.0" text="Update Data" />
+      <Label fx:id="lblLogin" layoutX="213.0" layoutY="78.0" prefHeight="17.0" prefWidth="153.0" text="Witaj ">
+         <font>
+            <Font size="25.0" />
+         </font></Label>
+      <Button fx:id="btnSurvey" layoutX="224.0" layoutY="200.0" mnemonicParsing="false" onMouseClicked="#surveyEvent" prefHeight="25.0" prefWidth="107.0" text="Survey" />
+      <Button fx:id="btnShowSurveys" layoutX="224.0" layoutY="243.0" mnemonicParsing="false" onAction="#showSurveyAction" onMouseClicked="#surveyEvent" prefHeight="25.0" prefWidth="107.0" text="Show Surveys" />
+      <MenuBar layoutX="1.0" layoutY="2.0" prefHeight="25.0" prefWidth="600.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem fx:id="mLogout" mnemonicParsing="false" onAction="#logoutAction" text="Logout" />
+                  <MenuItem fx:id="mClose" mnemonicParsing="false" onAction="#closeAction" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem fx:id="mAbout" mnemonicParsing="false" onAction="#aboutAction" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>
